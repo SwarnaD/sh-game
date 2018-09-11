@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+        <title>Croissant - CSCC09</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="/css/form.css">
+        <link rel="stylesheet" type="text/css" href="/css/player_ui.css">
+    </head>
+    <body>
+        <div id="gameDiv">
+            <form id="login_form" class="custom_form">
+                <h2>SIGN IN</h2>
+                <div>
+                    <input type="text" id="login_username_input" placeholder="Enter username"/>
+                </div>
+                <div>
+                    <input type="password" id="login_password_input" placeholder="Enter password"/>
+                </div>
+                <input type="submit" value="GO!"/>
+            </form>
+
+            <form id="register_form" class="custom_form">
+                <h2>REGISTER</h2>
+                <input type="text" id="reg_username" placeholder="Enter a username">
+                <input type="password" id="reg_password" placeholder="Enter a password">
+                <input type="password" id="reg_confirm_password" placeholder="Confirm password">
+                <input type="submit" value="SUBMIT">
+            </form>
+
+            <form id="server_form" class="custom_form">
+                <select id="server_select" size='5'>
+                </select>
+                <input type="submit" value="SUBMIT">
+            </form>
+
+            <div id="player_ui">
+                <h1>CURRENT PLAYERS</h1>
+                <div id="lobby_players"></div>
+
+                <div id="options">
+                    <input id="start" type="button" value="START">
+                    <input id="ready" type="button" value="READY">
+                    <input id="exit" type="button" value="EXIT">
+                </div>
+
+                <div id="messages"></div>
+
+                <form id="chat_form">
+                    <textarea id="chat_input" placeholder="Type message here"></textarea>
+                    <input type="submit" value="SEND">
+                </form>
+            </div>
+
+        </div>
+
+    </body>
+    <script src="/js/network.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/host.js"></script>
+    <script src="/js/libraries/socket.io.js"></script>
+    <script src="/js/libraries/simplepeer.min.js"></script>
+    <script src="/js/libraries/phaser.js"></script>
+    <script src="/js/states/play.js"></script>
+    <script src="/js/states/servers.js"></script>
+    <script src="/js/states/menu.js"></script>
+    <script src="/js/states/register.js"></script>
+    <script src="/js/states/login.js"></script>
+    <script src="/js/states/load.js"></script>
+    <script src="/js/states/boot.js"></script>
+    <script src="/js/game.js"></script>
+</html>

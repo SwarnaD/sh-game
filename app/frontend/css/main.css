@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body,
+input {
+    font-family: 'Nunito', sans-serif;
+}
+
+canvas {
+    display : block;
+    margin: auto;
+}
+
+#gameDiv {
+    position: relative;
+    background-color: green;
+}

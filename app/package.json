@@ -1,0 +1,33 @@
+{
+  "name": "placeholder",
+  "version": "0.0.1",
+  "description": "Hidden info game",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-prebuild": "echo \"Heroku pre-build\"",
+    "heroku-postbuild": "echo \"Heroku post-build\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "crypto": "0.0.3",
+    "express": "^4.15.0",
+    "express-session": "^1.15.1",
+    "express-socket.io-session": "^1.3.2",
+    "express-validator": "^3.1.2",
+    "file-system": "^2.2.2",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "multer": "^1.3.0",
+    "nedb": "^1.8.0",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "6.9.4",
+    "npm": "3.10.x"
+  }
+}

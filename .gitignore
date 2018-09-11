@@ -1,0 +1,7 @@
+/app/node_modules/*
+/app/uploads/*
+/app/frontend/assets/*
+/app/db/*
+
+# phpstorm
+.idea/
